@@ -1,4 +1,19 @@
 {
-  "name": "app",
-  "private": true
+  "name": "family_study",
+  "private": true,
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.0-beta.2",
+    "esbuild": "^0.20.0",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "autoprefixer": "^10.4.17",
+    "postcss-nesting": "^12.0.2",
+    "postcss-import": "^16.0.0"
+  },
+  "scripts": {
+    "build": "bun build ./app/javascript/application.js --outdir ./app/assets/builds --sourcemap",
+    "build:css": "postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css"
+  },
+  "type": "module"
 }

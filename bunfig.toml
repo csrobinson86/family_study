@@ -1,0 +1,7 @@
+[install]
+# Use exact versions for dependencies
+exact = true
+
+[install.scopes."@hotwired"]
+# Use the same version of dependencies for @hotwired packages
+version = "latest" 

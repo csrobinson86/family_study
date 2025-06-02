@@ -1,1 +1,23 @@
-/* Entry point for your PostCSS build */
+/* Base styles */
+@import "design-system/base/_reset.css";
+
+/* Design System Tokens */
+@import "design-system/tokens/colors.css";
+@import "design-system/tokens/typography.css";
+
+/* Utilities */
+/* Add specific utility imports as needed */
+
+/* Components */
+@import "design-system/components/button.css";
+
+/* Layouts */
+/* Add specific layout imports as needed */
+
+/* Root Variables */
+:root {
+  --primary-color: #353535;
+  --secondary-color: #666;
+}
+
+
